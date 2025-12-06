@@ -32,7 +32,7 @@ const NAV_CONFIG = {
     { label: 'HOME', path: '/' },
     { label: 'PROJECTS', path: '/projects' },
     { label: 'PRINTERS', path: '/printers' },
-    { label: '[ABOUT', path: '/bio' }
+    { label: 'ABOUT', path: '/bio' }
   ]
 };
 
