@@ -9,7 +9,6 @@ import Printers from './pages/Printers';
 const NAV_CONFIG = {
   brand: (
     <Link to="/" className="brand-link">
-      {/* 1. The SVG Icon (Cyan House) */}
       <svg 
         xmlns="http://www.w3.org/2000/svg" 
         width="20" 
@@ -30,10 +29,10 @@ const NAV_CONFIG = {
     </Link>
   ),
   links: [
-    { label: '[ HOME ]', path: '/' },
-    { label: '[ PROJECTS ]', path: '/projects' },
-    { label: '[ PRINTERS ]', path: '/printers' },
-    { label: '[ ABOUT ]', path: '/bio' }
+    { label: 'HOME', path: '/' },
+    { label: 'PROJECTS', path: '/projects' },
+    { label: 'PRINTERS', path: '/printers' },
+    { label: '[ABOUT', path: '/bio' }
   ]
 };
 
@@ -61,7 +60,7 @@ function App() {
             title={HOME_CONTENT.title}
             subtitle={HOME_CONTENT.subtitle}
             footer={HOME_CONTENT.footer}
-            ctaText="[ VIEW PROJECTS ]"
+            ctaText="VIEW PROJECTS"
             ctaPath="/projects"
           />
         } />
