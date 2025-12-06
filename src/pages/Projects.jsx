@@ -17,7 +17,7 @@ const Projects = () => {
     
     const timeoutId = setTimeout(() => {
         controller.abort(); 
-    }, 4000);
+    }, 0);
 
     fetch('http://localhost:5000/projects', { signal: controller.signal })
       .then((res) => {
