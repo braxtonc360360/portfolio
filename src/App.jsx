@@ -5,7 +5,6 @@ import Hero from './components/Hero';
 import Projects from './pages/Projects';
 import Bio from './pages/Bio';
 import Printers from './pages/Printers';
-
 const NAV_CONFIG = {
   brand: (
     <Link to="/" className="brand-link">
