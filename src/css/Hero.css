@@ -1,0 +1,66 @@
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-title {
+  font-size: clamp(4rem, 13vw, 12rem);
+  color: var(--text-secondary);
+  font-weight: 900;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: -5px;
+  min-height: 1em; 
+}
+
+.hero-subtitle {
+  color: var(--text-primary);
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  max-width: 800px;
+  margin-top: 2rem;
+  line-height: 1.6;
+}
+
+.hero-footer {
+  margin-top: 3rem;
+  font-family: monospace;
+  color: var(--dim);
+}
+
+.cursor {
+  display: inline-block;
+  color: var(--text-secondary);
+  animation: blink 1s step-end infinite;
+  margin-left: 5px;
+  font-weight: 100;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.retro-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: 2px solid #00ff00;
+  color: #00ff00;
+  font-family: 'Courier New', monospace; 
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.retro-btn:hover {
+  background-color: #00ff00;
+  color: #000000;
+  box-shadow: 0 0 15px #00ff00;
+}

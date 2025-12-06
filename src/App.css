@@ -29,3 +29,31 @@
 .small {
   font-size: 0.75rem;
 }
+
+/* In src/App.css */
+
+.hero h1, .typing-text {
+  font-size: 400px !important;  /* Change 60px to your desired size */
+}
+
+/* src/App.css */
+
+.retro-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 2px solid var(--accent, #00ff00); /* Uses your accent color or green */
+  color: var(--accent, #00ff00);
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: transparent;
+}
+
+.retro-btn:hover {
+  background-color: var(--accent, #00ff00);
+  color: #000; /* Text turns black on hover */
+  box-shadow: 0 0 15px var(--accent, #00ff00); /* Glowing effect */
+}

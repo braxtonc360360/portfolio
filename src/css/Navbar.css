@@ -1,0 +1,64 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: rgba(11, 12, 16, 0.9);
+  border-bottom: 2px solid var(--border-color);
+  backdrop-filter: blur(5px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-brand {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.prompt {
+  color: var(--text-secondary);
+  margin-right: 5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-item {
+  font-size: 0.9rem;
+  color: var(--border-color);
+  letter-spacing: 1px;
+}
+
+.nav-item:hover, .nav-item.active {
+  color: var(--text-secondary);
+  text-shadow: 0 0 8px rgba(102, 252, 241, 0.4);
+}
+
+.homeLogo img {
+  height: 7vh;
+  width: auto;
+}
+
+.brand-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.brand-link:hover {
+  transform: translateY(-2px);
+  text-shadow: 0 0 8px var(--accent, #00ffff), 0 0 15px var(--accent, #00ffff);
+  color: #fff;
+}
+
+.brand-link:hover svg {
+  filter: drop-shadow(0 0 5px var(--accent, #00ffff));
+  stroke: #fff;
+}
