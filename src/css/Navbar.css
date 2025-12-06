@@ -62,3 +62,36 @@
   filter: drop-shadow(0 0 5px var(--accent, #00ffff));
   stroke: #fff;
 }
+
+/* src/components/Navbar.css */
+
+/* MOBILE ONLY STYLES (Phones) */
+@media (max-width: 768px) {
+  
+  /* 1. Stack the Logo and Links vertically */
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem; /* Space between name and links */
+  }
+
+  /* 2. Center the links and let them wrap if needed */
+  .nav-links {
+    width: 100%;
+    justify-content: center; /* Centers items horizontally */
+    flex-wrap: wrap;         /* Allows 2 rows if screen is very tiny */
+    gap: 1rem;               /* Smaller gap between words */
+  }
+
+  /* 3. Adjust text size for small screens */
+  .nav-item {
+    font-size: 0.85rem;
+    padding: 5px; /* Adds touch target area */
+  }
+  
+  /* 4. Ensure the name is centered too */
+  .nav-brand {
+    justify-content: center;
+    width: 100%;
+  }
+}
