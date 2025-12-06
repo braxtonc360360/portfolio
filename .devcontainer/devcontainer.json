@@ -13,9 +13,31 @@
     "codespaces": {
       "openFiles": [
         "src/App.jsx"
-      ]
+      ],
+      "repositories": {
+        "braxtonc360360/portfolio": {
+          "permissions": {
+            "permissions": {
+  "actions": "write",
+  "checks": "write",
+  "contents": "write",
+  "deployments": "write",
+  "discussions": "write",
+  "issues": "write",
+  "packages": "read",
+  "pages": "write",
+  "pull_requests": "write",
+  "repository_projects": "write",
+  "statuses": "write",
+  "workflows": "write"
+}
+
+            }
+        }
+      }
     }
   },
+
   "portsAttributes": {
     "3306": {
       "label": "Application",
@@ -23,4 +45,7 @@
     }
   },
   "forwardPorts": [3306]
+
+
+  
 }
