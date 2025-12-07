@@ -44,7 +44,7 @@ const Bio = () => {
               className="bio-link" 
               style={{ cursor: 'pointer', marginLeft: '5px' }}
             >
-              Braxton.Churchwell@my.maryvillecollege.edu
+            Braxton.Churchwell@my.maryvillecollege.edu
             </span>
 
             {showCopyMsg && (
