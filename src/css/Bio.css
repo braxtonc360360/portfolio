@@ -168,3 +168,37 @@
     order: -1;
   }
 }
+
+/* src/css/Bio.css - Add this to the very bottom */
+
+/* MOBILE TEXT FIXES */
+@media (max-width: 768px) {
+  
+  /* 1. Force the text container to fit the screen */
+  .bio-text-panel {
+    width: 100%;
+    min-width: 0; /* Critical for Flex/Grid items to shrink properly */
+    overflow-wrap: break-word; /* Forces long words to break if needed */
+  }
+
+  /* 2. Fix the Skills List (2 Columns might be too tight on small phones) */
+  .skill-list {
+    grid-template-columns: 1fr; /* Switch to 1 column so text doesn't overlap */
+    gap: 0.5rem;
+  }
+
+  /* 3. Ensure the main container doesn't block scrolling */
+  .bio-container {
+    height: auto;       /* Removes any fixed height */
+    overflow: visible;  /* Allows content to flow down */
+    padding-bottom: 4rem; /* Adds space at bottom so you can scroll past the end */
+  }
+  
+  /* 4. Make paragraph text readable */
+  .bio-paragraph, 
+  .bio-paragraph2 {
+    font-size: 0.95rem; /* Slightly smaller for mobile readability */
+    width: 100%;
+    max-width: 100%;
+  }
+}
