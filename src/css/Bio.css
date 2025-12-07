@@ -160,6 +160,17 @@
 }
 
 @media (max-width: 768px) {
+  /* src/css/Bio.css (Inside the @media (max-width: 768px) block) */
+
+.bio-paragraph2 {
+  /* This forces the long email to break onto the next line */
+  word-break: break-all; 
+  overflow-wrap: anywhere;
+  
+  /* Ensures the container doesn't stretch off screen */
+  width: 100%;
+  max-width: 100%;
+}
   .bio-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
