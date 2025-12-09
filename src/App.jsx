@@ -46,6 +46,7 @@ const HOME_CONTENT = {
 };
 
 function App() {
+  document.title = "Braxton's Portfolio";
   return (
     <BrowserRouter>
       <Navbar 
