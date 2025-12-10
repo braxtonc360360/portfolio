@@ -60,7 +60,7 @@ function App() {
             title={HOME_CONTENT.title}
             subtitle={HOME_CONTENT.subtitle}
             footer={HOME_CONTENT.footer}
-            ctaText="VIEW PROJECTS"
+            ctaText="HEY NANA"
             ctaPath="/projects"
           />
         } />
