@@ -36,10 +36,7 @@ const NAV_CONFIG = {
 };
 
 const HOME_CONTENT = {
-  title: ["WELCOME TO MY PAGE", "ROBOTICS.",
-    "AUTOMATION.",
-    "3D_PRINTING.",
-    "WRITING_CODE."], 
+  title: ["WELCOME_TO_MY_PAGE.", "ROBOTICS.", "AUTOMATION.", "3D_PRINTING.", "WRITING_CODE."], 
   
   subtitle: "Exploring the intersection of software and hardware. Check out my latest works in the Projects section!",
   footer: "Made with 💙 by Braxton"
