@@ -10,7 +10,7 @@ const Printers = () => {
       id: 1,
       model: "Creality CR-30",
       status: "OPERATIONAL",
-      image: kobra,
+      image: cr30,
       specs: [
         "Build Vol: 200 x 170 x Ꝏ mm",
         "Nozzle: 0.4mm Stainless Steel",
