@@ -3,13 +3,11 @@ import Card from '../components/Card';
 import PageHeader from '../components/PageHeader';
 import ProjectModal from '../components/ProjectModal';
 
-// Import your images
 import synapse from '../images/synapse.png';
 import xeno from '../images/xeno.jpg';
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
-  const [status, setStatus] = useState('CONNECTING...');
   const [selectedProject, setSelectedProject] = useState(null);
 
   useEffect(() => {
@@ -31,7 +29,6 @@ const Projects = () => {
       })
       .catch((err) => {
         console.warn("Using Fallback Data:", err.message);
-        setStatus('CONNECTED ☑️');
         
         setProjects([
           // --- REAL PROJECTS ---

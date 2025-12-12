@@ -36,7 +36,7 @@ const NAV_CONFIG = {
 };
 
 const HOME_CONTENT = {
-  title: ["WELCOME_TO_MY_PAGE.", "ROBOTICS.",
+  title: ["WELCOME TO MY PAGE.", "ROBOTICS.",
     "AUTOMATION.",
     "3D_PRINTING.",
     "WRITING_CODE."], 

@@ -59,7 +59,7 @@ const Printers = () => {
       ],
       logs: [
         "Routine nozzle replacement (Abrasive filaments)",
-        "Firmware flashed to v3.11.0",
+        "Firmware flashed to v2.9.0",
         "Replaced both motherboards after failure",
         "Replaced thermistor and heated bed"
       ]
@@ -68,7 +68,7 @@ const Printers = () => {
 
   return (
     <div style={{ padding: '2rem', maxWidth: '1000px', margin: '0 auto' }}>
-      <PageHeader title="3D PRINTER FLEET" status="SYSTEMS_ONLINE" />
+      <PageHeader title="3D PRINTER FLEET"/>
       <p>These are some of the machines in the fleet of printers that I maintain.</p>
       <div className="fleet-grid">
         {fleet.map((printer) => (
