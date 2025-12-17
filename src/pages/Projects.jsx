@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Card from '../components/Card';
 import PageHeader from '../components/PageHeader';
 import ProjectModal from '../components/ProjectModal';
-
+import websitePic from '../images/websiteImage.png';
 import synapse from '../images/synapse.png';
 import xeno from '../images/xeno.jpg';
 
@@ -31,7 +31,6 @@ const Projects = () => {
         console.warn("Using Fallback Data:", err.message);
         
         setProjects([
-          // --- REAL PROJECTS ---
           {
             id: 1,
             title: "ARCTOS Robotic ARM",
@@ -54,57 +53,17 @@ const Projects = () => {
             language: "G-Code / 3D Modeling",
             image: xeno,
             description: "A Xenomorph model inspired by the Alien franchise, 3D printed using PETG filament. This project involved editing the model in CAD software.",
-            tags: ["slicing", "design"]
+            tags: ["Slicing", "Design"]
           },
 
-          // --- DUMMY PROJECTS (ALL IDENTICAL TEXT) ---
           {
-            id: 101,
-            title: "TEST PROJECT",
-            language: "N/A",
-            image: "https://placehold.co/600x400/CCCCCC/696969?text=PLACEHOLDER", 
-            description: "This is a placeholder description. Content is coming soon.",
-            tags: ["TEST"]
-          },
-          {
-            id: 102,
-            title: "TEST PROJECT",
-            language: "N/A",
-            image: "https://placehold.co/600x400/CCCCCC/696969?text=PLACEHOLDER",
-            description: "This is a placeholder description. Content is coming soon.",
-            tags: ["TEST"]
-          },
-          {
-            id: 103,
-            title: "TEST PROJECT",
-            language: "N/A",
-            image: "https://placehold.co/600x400/CCCCCC/696969?text=PLACEHOLDER",
-            description: "This is a placeholder description. Content is coming soon.",
-            tags: ["TEST"]
-          },
-          {
-            id: 104,
-            title: "TEST PROJECT",
-            language: "N/A",
-            image: "https://placehold.co/600x400/CCCCCC/696969?text=PLACEHOLDER",
-            description: "This is a placeholder description. Content is coming soon.",
-            tags: ["TEST"]
-          },
-          {
-            id: 105,
-            title: "TEST PROJECT",
-            language: "N/A",
-            image: "https://placehold.co/600x400/CCCCCC/696969?text=PLACEHOLDER",
-            description: "This is a placeholder description. Content is coming soon.",
-            tags: ["TEST"]
-          },
-          {
-            id: 106,
-            title: "TEST PROJECT",
-            language: "N/A",
-            image: "https://placehold.co/600x400/CCCCCC/696969?text=PLACEHOLDER",
-            description: "This is a placeholder description. Content is coming soon.",
-            tags: ["TEST"]
+            id: 4,
+            title: "Portfolio Website",
+            language: "React / Vite", 
+            image: websitePic, 
+            description: "A fully responsive personal portfolio website built with React and Vite. It utilizes React Router for seamless navigation between multiple pages (Bio, Projects, Printers) and features a custom dark-themed UI with mobile-optimized CSS layouts.",
+            tags: ["React", "Vercel", "GIT"],
+            link: "https://github.com/braxtonc360360/portfolio" 
           }
         ]);
       });

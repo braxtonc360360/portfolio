@@ -33,9 +33,41 @@ const ProjectModal = ({ project, onClose }) => {
             
             <p className="modal-desc">{project.description}</p>
             
+            {/* 👇 NEW: Only shows if you added a 'link' to the project in Projects.js */}
+            {project.link && (
+              <a 
+                href={project.link} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-block',
+                  marginTop: '1.5rem',
+                  padding: '10px 15px',
+                  border: '1px solid #66fcf1',
+                  color: '#66fcf1',
+                  textDecoration: 'none',
+                  fontFamily: 'monospace',
+                  fontWeight: 'bold',
+                  letterSpacing: '1px',
+                  transition: '0.3s'
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.background = '#66fcf1';
+                  e.target.style.color = '#0b0c10';
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.background = 'transparent';
+                  e.target.style.color = '#66fcf1';
+                }}
+              >
+                [ VIEW SOURCE_CODE ]
+              </a>
+            )}
+            
             <div className="modal-specs">
               <p><strong>STATUS:</strong> COMPILED_SUCCESSFULLY</p>
-              <p><strong>DEPLOYMENT:</strong> LOCALHOST:8888</p>
+              {/* Dynamically updates if it's a web project */}
+              <p><strong>DEPLOYMENT:</strong> {project.link ? 'VERCEL_APP' : 'LOCALHOST:8888'}</p>
             </div>
           </div>
         </div>
