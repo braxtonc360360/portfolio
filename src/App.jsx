@@ -1,5 +1,6 @@
 import React from 'react';
-import { Analytics } from '@vercel/analytics/next';\
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -55,6 +56,7 @@ function App() {
         links={NAV_CONFIG.links} 
       />
       <Analytics/>
+      <SpeedInsights />
       <Routes>
         <Route path="/" element={
           <Hero 
