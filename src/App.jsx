@@ -1,4 +1,5 @@
 import React from 'react';
+import { Analytics } from '@vercel/analytics/next';\
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -53,7 +54,7 @@ function App() {
         brand={NAV_CONFIG.brand} 
         links={NAV_CONFIG.links} 
       />
-      
+      <Analytics/>
       <Routes>
         <Route path="/" element={
           <Hero 
