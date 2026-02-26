@@ -60,7 +60,7 @@ const ProjectModal = ({ project, onClose }) => {
                   e.target.style.color = '#66fcf1';
                 }}
               >
-                [ VIEW SOURCE_CODE ]
+                [ VIEW PROJECT ]
               </a>
             )}
             
