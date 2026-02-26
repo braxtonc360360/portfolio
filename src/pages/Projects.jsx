@@ -6,6 +6,7 @@ import websitePic from '../images/websiteImage.png';
 import synapse from '../images/synapse.png';
 import xeno from '../images/xeno.jpg';
 import arm from '../images/arm.jpg';
+import mc3dHome from '../images/homepage.png';
 const Projects = () => {
   const [projects, setProjects] = useState([]);
   const [selectedProject, setSelectedProject] = useState(null);
@@ -52,7 +53,7 @@ const Projects = () => {
             title: "Xenomorph Display",
             language: "G-Code / 3D Modeling",
             image: xeno,
-            description: "A Xenomorph model inspired by the Alien franchise, 3D printed using PETG filament. This project involved editing the model in CAD software.",
+            description: "A Xenomorph model from the Alien franchise, 3D printed using PLA filament. This project involved editing the model in CAD software.",
             tags: ["Slicing", "Design"]
           },
 
@@ -61,9 +62,18 @@ const Projects = () => {
             title: "Portfolio Website",
             language: "React / Vite", 
             image: websitePic, 
-            description: "A fully responsive personal portfolio website built with React and Vite. It utilizes React Router for seamless navigation between multiple pages (Bio, Projects, Printers) and features a custom dark-themed UI with mobile-optimized CSS layouts.",
+            description: "A fully responsive personal portfolio website built with React and Vite. It uses React Router for navigation between multiple pages (Bio, Projects, Printers) and features a custom dark-themed UI with mobile-optimized CSS layouts.",
             tags: ["React", "Vercel", "GIT"],
             link: "https://github.com/braxtonc360360/portfolio" 
+          },
+          {
+           id: 5,
+           title: "Makerspace Hub (The BuildPlate)",
+           language: "React / SQL",
+           image: mc3dHome,
+           description: "Experimented with AI to create a hub for our members in the school makerspace (MC3D).",
+           tags: ["React","Vercel","Databases","AI"],
+           link: "https://www.buildplate.space/"
           }
         ]);
       });
