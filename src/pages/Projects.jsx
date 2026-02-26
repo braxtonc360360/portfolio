@@ -73,7 +73,7 @@ const Projects = () => {
            image: mc3dHome,
            description: "Experimented with AI to create a hub for our members in the school makerspace (MC3D).",
            tags: ["React","Vercel","Databases","AI"],
-           link: "https://portfolio-git-main-braxtonc360360s-projects.vercel.app/"
+           link: "https://makerspacesystem-git-main-braxtonc360360s-projects.vercel.app/"
           }
         ]);
       });
