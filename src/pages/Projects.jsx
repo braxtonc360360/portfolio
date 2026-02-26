@@ -5,7 +5,7 @@ import ProjectModal from '../components/ProjectModal';
 import websitePic from '../images/websiteImage.png';
 import synapse from '../images/synapse.png';
 import xeno from '../images/xeno.jpg';
-
+import arm from '../images/arm.jpg';
 const Projects = () => {
   const [projects, setProjects] = useState([]);
   const [selectedProject, setSelectedProject] = useState(null);
@@ -35,7 +35,7 @@ const Projects = () => {
             id: 1,
             title: "ARCTOS Robotic ARM",
             language: "Python / C++",
-            image: "https://arctosrobotics.com/wp-content/uploads/2024/05/IMG_3624-scaled.jpg",
+            image: arm,
             description: "I built a 3D printed robotic arm using open source designs. I printed and assembled the parts, set up the electronics, and programmed the arm to move with smooth and accurate control.",
             tags: ["Robotics","3D Printing"]
           },
